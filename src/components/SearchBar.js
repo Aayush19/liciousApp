@@ -5,13 +5,8 @@ import { Card, TouchableRipple } from "react-native-paper";
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { ICON_SIZE } from "../utils/constants";
 import { COLORS } from "../utils/colors";
-interface SearchBar {
-    value: string,
-    setValue(),
-    showFav: boolean
-}
 
-function SearchBar({ value = 'Home', setValue, showFav = true }: SearchBar) {
+function SearchBar({ value = 'Home', setValue, showFav = true }) {
     const navigation = useNavigation();
     const backHandler = () => {
         navigation.goBack()

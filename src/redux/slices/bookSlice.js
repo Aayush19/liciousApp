@@ -1,10 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-interface BookState {
-  value: number;
-}
-
-const initialState: BookState = {
+const initialState = {
   value: 0,
 };
 
